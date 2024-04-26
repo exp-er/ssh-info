@@ -1,0 +1,12 @@
+---
+import { LocaleProvider, useLocale } from 'astro-i18n';
+const { lang } = useLocale(); 
+const { pathname } = Astro.params; // Get the current page URL (e.g., /amenities) 
+const content = await import(`../content/${lang}${pathname}.md`);
+---
+
+<LocaleProvider lang={lang}>
+    <div class="page-content">
+        {content.default} 
+    </div>
+</LocaleProvider>

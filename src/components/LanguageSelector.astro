@@ -1,0 +1,15 @@
+---
+import { useLocale, LocaleLink } from 'astro-i18n';
+
+const { availableLocales } = useLocale();
+---
+
+<ul class="language-list">
+  {availableLocales.map((locale) => (
+    <li key={locale}>
+        <LocaleLink locale={locale}>
+            {locale.toUpperCase()} 
+        </LocaleLink>
+    </li>
+  ))}
+</ul>
