@@ -1,6 +1,7 @@
 ---
 import { buttonVariants } from '@/components/ui/button'
 import ThemeToggle from '@/components/ThemeToggle.astro'
+import {LanguageDrop} from '@/components/dropdown.tsx'
 ---
 
 <header
@@ -16,6 +17,7 @@ import ThemeToggle from '@/components/ThemeToggle.astro'
     </div>
     <div class="flex flex-1 items-center justify-end space-x-4">
       <nav class="flex items-center space-x-1">
+        <LanguageDrop client:load />
         <a
           href="https://bookings.travelclick.com/13185"
           target="_blank"
