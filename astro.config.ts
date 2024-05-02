@@ -2,7 +2,6 @@ import { defineConfig } from 'astro/config'
 import react from '@astrojs/react'
 import tailwind from '@astrojs/tailwind'
 import { defineConfig } from 'astro/config';
-import i18n from "astro-i18n"; 
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,6 +13,5 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
-    i18n(),
   ],
 })

@@ -1,3 +1,8 @@
+---
+import { buttonVariants } from '@/components/ui/button'
+
+---
+
 <footer class="border-t py-6 md:px-8 md:py-0">
   <div
     class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row"
@@ -25,5 +30,24 @@
       </a>
       .
     </p>
+
+    <div class="flex gap-4">
+      <a
+        href="https://sloanesquarehotel.co.uk"
+        target="_blank"
+        rel="noreferrer"
+        class={buttonVariants()}
+      >
+        Hotel Website
+      </a>
+      <a
+        href="https://sloanesquarehotel.co.uk"
+        target="_blank"
+        rel="noreferrer"
+        class={buttonVariants({ variant: 'outline' })}
+      >
+        Leave a Review
+      </a>
+    </div>
   </div>
 </footer>
